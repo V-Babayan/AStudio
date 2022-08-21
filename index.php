@@ -4,9 +4,9 @@
     function get_app_url() {
         $result = '';
 
-        if ($GLOBALS[state] == 'DEVELOPMENT') {
+        if ($GLOBALS['state'] == 'DEVELOPMENT') {
             $result = 'template';
-        } else if ($GLOBALS[state] == 'READY') {
+        } else if ($GLOBALS['state'] == 'READY') {
             $result = 'app';
         } else {
             throw new Exception('The state can only be DEVELOPMENT or READY.');
