@@ -1,2 +1,0 @@
-# AStudio
-AStudio landing page
