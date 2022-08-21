@@ -5,9 +5,9 @@
         $result = '';
 
         if ($GLOBALS['state'] == 'DEVELOPMENT') {
-            $result = 'template';
+            $result = 'template.php';
         } else if ($GLOBALS['state'] == 'READY') {
-            $result = 'app';
+            $result = 'app.html';
         } else {
             throw new Exception('The state can only be DEVELOPMENT or READY.');
         }
@@ -17,5 +17,5 @@
 
     $app_url = get_app_url();
 
-    include_once('src/' . $app_url . '.html') 
+    include_once('src/' . $app_url) 
 ?>
