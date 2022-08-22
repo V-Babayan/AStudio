@@ -1,0 +1,14 @@
+{
+    "name": "astudio",
+    "version": "0.1.0",
+    "homepage": "https://github.com/V-Babayan/AStudio/tree/main#readme",
+    "author": "Vladislav Babayan <vladislavbabayan@gmail.com> (https://github.com/V-Babayan)",
+    "contributors": [
+        "Martik Avagyan <martikavagyan1@gmail.com> (https://github.com/m-avagyan)"
+    ],
+    "bugs": {
+        "url": "https://github.com/V-Babayan/AStudio/issues"
+    },
+    "license": "MIT",
+    "private": true
+}
