@@ -322,7 +322,10 @@ header {
 
 /* ===== Fill-circle-decor ===== */
 @media screen and (min-width: 768px) {
-  .fill-sector-decor::before {
+  .fill-circle-decor {
+    position: relative;
+  }
+  .fill-circle-decor::before {
     content: "";
     display: block;
     height: 130px;
@@ -377,7 +380,7 @@ header {
     background-position: calc(.625rem + 3.75 * (100vw - 48rem) / 42) bottom;
   }
 
-  .intro__container.fill-sector-decor::before {
+  .intro__container.fill-circle-decor::before {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -485,6 +488,10 @@ header {
 
 /* Service
 ========== */
+.service {
+  margin-bottom: calc(2rem + 7.125 * (100vw - 20rem) / 70);
+}
+
 .service__title {
   margin-bottom: calc(1rem + (100vw - 48rem) / 42);
 }
@@ -630,6 +637,9 @@ header {
 }
 
 @media screen and (min-width: 1440px) {
+  .service {
+    margin-bottom: 9.125rem;
+  }
   .service__container {
     gap: 5.625rem;
     padding-right: 4rem;
@@ -639,6 +649,73 @@ header {
   }
 }
 
+/* Vision
+========= */
+.vision {
+  margin-bottom: calc(1.5rem + 5.75 * (100vw - 20rem) / 70)
+}
+.vision__container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: calc(1rem + 6.5 * (100vw - 20rem) / 70);
+}
+
+.vision__video-block > video {
+  width: 100%;
+  box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 32px;
+}
+
+.vision__title {
+  margin-bottom: calc(1rem + (100vw - 20rem) / 70)
+}
+
+@media screen and (min-width: 768px) {
+  .vision {
+    padding-bottom: calc(2.5rem + 1.5 * (100vw - 48rem) / 42)
+  }
+  .vision__container {
+    flex-direction: row;
+    align-items: center;
+
+  }
+  .vision__video-block {
+    flex: 0 0 45.8%;
+  }
+  .vision__video-block.fill-circle-decor::before {
+    background: #fff5db;
+  
+    right: -2.5rem;
+    bottom: -4rem;
+    z-index: -1;
+  
+  }
+  .vision__content {
+    flex: 1 1 auto;
+  }
+
+  .vision__content.sector-decor::after {
+    background: #eff1ff;
+    border-radius: 0px 0px 100px 0px;
+  
+    left: -2.5rem;
+    top: -1.5rem;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .vision {
+    padding-bottom: 4rem;
+    margin-bottom: 7.25rem;
+  }
+  .vision__container {
+    gap: 7.5rem;
+  }
+  .vision__title {
+    margin-bottom: 2rem;
+  }
+}
 
 /* 
 
