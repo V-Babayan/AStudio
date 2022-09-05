@@ -1021,8 +1021,8 @@ header {
 
   .newsletter__input {
     border: none;
-    padding: none;
-    flex: 1 0 200px;
+    padding: 0;
+    flex: 1 0 185px;
   }
 }
 
