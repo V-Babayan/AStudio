@@ -235,7 +235,7 @@ header {
   -webkit-text-stroke: 1px #000000;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .title {
     text-align: center;
   }
@@ -278,6 +278,7 @@ header {
   border-radius: 60px;
   padding: 12.5px 20px;
 
+  transition: background-color .2s linear;
 }
 .btn:hover {
   background: #3e4fe6;
@@ -1288,14 +1289,3 @@ header {
     padding: 1.5rem 0 1rem;
   }
 }
-/* 
-
-@media screen and (max-width: 991.98px) 
-
-@media screen and (max-width: 767.98px)
-
-@media screen and (max-width: 575.98px)
-
-@media screen and (max-width: 479.98px)
-
-*/
