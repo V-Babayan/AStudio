@@ -35,8 +35,13 @@ ol, ul, li {
 
 input[type='checkbox'],
 input[type='radio'],
-input[type='submit'] {
+input[type='submit'],
+button[type='button'] {
   appearance: none;
+}
+
+button[type='button'] {
+  background: transparent;
 }
 
 html, body {
