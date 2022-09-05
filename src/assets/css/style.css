@@ -610,7 +610,7 @@ header {
 
   .service__content {
     flex: 0 0 34.8%;
-    margin-bottom: none;
+    margin-bottom: 0;
   }
   .service__content.sector-decor::after {
     z-index: -1;
@@ -1021,6 +1021,7 @@ header {
 
   .newsletter__input {
     border: none;
+    border-radius: 0;
     padding: 0;
     flex: 1 0 185px;
   }
