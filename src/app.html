@@ -7,9 +7,24 @@
   <title>AStudio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link 
+    rel="apple-touch-icon" 
+    href="assets/icons/favicon.ico" 
+  />
+  <link
+    rel="icon"
+    sizes="192x192"
+    type= "image/x-icon"
+    href="assets/icons/favicon.ico"
+  />
+  <link
+    rel="icon"
+    sizes="16x16"
+    type= "image/x-icon"
+    href="assets/icons/favicon.ico"
+  />
 </head>
 
-<!-- font-family: 'Roboto', sans-serif; -->
 <body>
 <div class="wrapper">
   <header>
@@ -22,22 +37,22 @@
       <div class="header__menu menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="#">Home</a>
+            <button type="button" class="menu__link">Home</button>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">What We Do</a>
+            <button type="button" class="menu__link">What We Do</button>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Service</a>
+            <button type="button" class="menu__link">Service</button>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Project</a>
+            <button type="button" class="menu__link">Project</button>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Blog</a>
+            <button type="button" class="menu__link">Blog</button>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Contact</a>
+            <button type="button" class="menu__link">Contact</button>
           </li>
         </ul>
       </div>
@@ -178,10 +193,179 @@
           </section>
       </div>
     </div>
-    
 
+    <div class="feedback">
+      <div class="feedback__container">
+        <section class="feedback__info">
+          <h4 class="feedback__title title">What our happy client say</h4>
+          <p class="feedback__text text-big">Several selected clients, who already believe in our service.</p>
+        </section>
+        <div class="feedback__bottom">
+
+          <input type="radio" name="slider" id="page-1" checked>
+          <input type="radio" name="slider" id="page-2">
+          <input type="radio" name="slider" id="page-3">
+          <input type="radio" name="slider" id="page-4">
+          <input type="radio" name="slider" id="page-5">
+
+          <div class="feedback__portrait circle-decor">
+            <img 
+              src="assets/images/Feedback/Slider/1.jpg" 
+              alt="Our workers"
+              draggable="false"
+              loading="lazy"
+            >
+            <img 
+              src="assets/images/Feedback/Slider/2.jpg" 
+              alt="Our workers"
+              draggable="false"
+              loading="lazy"
+            >
+            <img 
+              src="assets/images/Feedback/Slider/3.jpg" 
+              alt="Our workers"
+              draggable="false"
+              loading="lazy"
+            >
+            <img 
+              src="assets/images/Feedback/Slider/4.jpg" 
+              alt="Our workers"
+              draggable="false"
+              loading="lazy"
+            >
+            <img 
+              src="assets/images/Feedback/Slider/5.jpg" 
+              alt="Our workers"
+              draggable="false"
+              loading="lazy"
+            >
+          </div>
+          <div class="feedback__slider slider">
+            <div class="slider__pages">
+              <section class="slider__page page">
+                <h6 class="page__title">Matthew Paul</h6>
+                <p class="page__text text">Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.</p>
+              </section>
+              <section class="slider__page page">
+                <h6 class="page__title">Matthew Paul</h6>
+                <p class="page__text text">Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.</p>
+              </section>
+              <section class="slider__page page">
+                <h6 class="page__title">Matthew Paul</h6>
+                <p class="page__text text">Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.</p>
+              </section>
+              <section class="slider__page page">
+                <h6 class="page__title">Matthew Paul</h6>
+                <p class="page__text text">Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.</p>
+              </section>
+              <section class="slider__page page">
+                <h6 class="page__title">Matthew Paul</h6>
+                <p class="page__text text">Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.</p>
+              </section>
+            </div>
+            <div class="slider__controls">
+              <label class="slider__control" for="page-1"></label>
+              <label class="slider__control" for="page-2"></label>
+              <label class="slider__control" for="page-3"></label>
+              <label class="slider__control" for="page-4"></label>
+              <label class="slider__control" for="page-5"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="newsletter">
+      <div class="newsletter__container sector-decor">
+        <div class="newsletter__info">
+          <h3 class="newsletter__title title">Subscribe Newsletter</h3>
+          <p class="newsletter__text text-big">I will update good news and promotion service not spam</p>
+        </div>
+        <form class="newsletter__form" action="#">
+          <input class="newsletter__input" type="text" placeholder="Enter your email address..">
+          <input class="newsletter__button btn" type="submit" value="Contact Now">
+        </form>
+      </div>
+    </div>
   </main>
-  <footer>Footer</footer>
+
+  <footer>
+    <div class="footer__container">
+
+      <div class="footer__content">
+        <div class="footer__info">
+          <h6 class="footer__logo logo"><span>A+</span>Studio</h6>
+          <p class="footer__text">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
+        </div>
+
+        <div class="footer__nav">
+
+          <div class="navbar">
+            <input type="checkbox" id="navbar-1">
+            <label for="navbar-1"><h6 class="navbar__title">What We Do</h6></label>
+            <ul class="navbar__list">
+            <li class="navbar__item"><a class="navbar__link" href="#">Web Design</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">App Design</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Social Media Manage</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Market Analysis Project</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar">
+            <input type="checkbox" id="navbar-2">
+            <label for="navbar-2"><h6 class="navbar__title">Company</h6></label>
+            <ul class="navbar__list">
+            <li class="navbar__item"><a class="navbar__link" href="#">About Us</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Career</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Become Investor</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar">
+            <input type="checkbox" id="navbar-3">
+            <label for="navbar-3"><h6 class="navbar__title">Support</h6></label>
+            <ul class="navbar__list">
+            <li class="navbar__item"><a class="navbar__link" href="#">FAQ</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Policy</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Business</a></li>
+            </ul>
+          </div>
+
+
+          <div class="navbar">
+            <input type="checkbox" id="navbar-4">
+            <label for="navbar-4"><h6 class="navbar__title">Contact</h6></label>
+            <ul class="navbar__list">
+            <li class="navbar__item"><a class="navbar__link" href="#">WhatsApp
+              </a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Support 24</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__social social">
+        <a class="social__link" href="#">
+          <svg class="social__icon facebook-icon">
+            <use xlink:href="assets/icons/Sprite.svg#facebook"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">
+          <svg class="social__icon twitter-icon">
+            <use xlink:href="assets/icons/Sprite.svg#twitter"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">
+          <svg class="social__icon linkedin-icon">
+            <use xlink:href="assets/icons/Sprite.svg#linkedin"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__copyright">Copyright © 2022 Avi Yansah</div>
+
+    </div>
+  </footer>
 </div>
 </body>
 </html>
