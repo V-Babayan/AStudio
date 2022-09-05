@@ -354,7 +354,7 @@ header {
 }
 
 .intro__inner {
-  padding-top: calc(1.625rem + 6 * (100vw - 20rem) / 70);
+  padding-top: calc(.625rem + 7 * (100vw - 20rem) / 70);
   padding-bottom: calc(1.5625rem + 5 * (100vw - 20rem) / 70);
 }
 
