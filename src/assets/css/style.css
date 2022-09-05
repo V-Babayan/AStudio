@@ -538,7 +538,7 @@ header {
   font-size: 24px;
   line-height: 1.25;
   color: #000000;
-  -webkit-text-stroke: 0.3px solid #000000;
+  -webkit-text-stroke: 0.3px #000000;
 
   margin-bottom: 1.7rem;
 }
@@ -955,6 +955,10 @@ header {
 
 /* Newsletter
 ============= */
+.newsletter {
+  margin-bottom: calc(1.75rem + 5 * (100vw - 20rem) / 70);
+}
+
 .newsletter__container {
   border-radius: 75px;
   padding: calc(1.625rem + 4.5 * (100vw - 20rem) / 70);
@@ -980,8 +984,9 @@ header {
 }
 
 .newsletter__input {
-  border: 1px solid #848484;
-  border-radius: 5px;
+  border: 5px solid #2639ed;
+  border-radius: 2rem;
+  padding: 5px 8px;
   font-size: 16px;
   line-height: 1.25;
 }
@@ -1010,6 +1015,7 @@ header {
 
   .newsletter__input {
     border: none;
+    padding: none;
     flex: 1 0 200px;
   }
 }
@@ -1061,6 +1067,10 @@ header {
 }
 
 @media screen and (min-width: 1440px) {
+  .newsletter {
+    margin-bottom: 6.75rem;
+  }
+
   .newsletter__container {
     padding: 6.125rem;
     padding-left: 5.75rem; 
@@ -1071,6 +1081,206 @@ header {
   }
 }
 
+/* Footer
+========= */
+.footer__container {
+  padding-top: calc(.75rem + 3 *(100vw - 20rem) / 70);
+
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer__content {
+  display: flex;
+  gap: calc(1rem + 11 * (100vw - 20rem) / 70);
+  flex-direction: column;
+  margin-bottom: calc(.5rem + .75 * (100vw - 20rem) / 70);
+}
+
+.footer__logo {
+  font-size: 24px;
+  line-height: 1.25;
+
+  margin-bottom: calc(.625rem + (100vw - 20rem) / 70);
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: #565656;
+}
+
+.footer__nav {
+  display: flex;
+  gap: .5rem;
+}
+
+.navbar input {
+  display: none;
+}
+
+.navbar__title {
+  font-size: 20px;
+  line-height: 1.25;
+  -webkit-text-stroke: .4px #000000;
+}
+
+.navbar__link {
+  font-size: 14px;
+  line-height: 2;
+
+  transition: color .2s linear;
+}
+
+/* ===== Social ===== */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social__icon {
+  display: block;
+  height: 36px;
+  width: 36px;
+}
+
+.facebook-icon {
+  fill: #3B5998;
+}
+.facebook-icon:hover {
+  fill: #3167db;
+}
+
+.linkedin-icon {
+  fill: #007ab9;
+}
+.linkedin-icon:hover {
+  fill: #0282c2;
+}
+
+.twitter-icon {
+  fill: #55acee;
+}
+.twitter-icon:hover {
+  fill: #459cdf;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #a4a4a4;
+
+  text-align: center;
+
+  padding-top: calc(.5rem + (100vw - 20rem) / 70);
+  padding-bottom: calc(.5rem + (100vw - 20rem) / 70);
+
+  border-top: 1px solid #f2f2f2;
+}
+
+@media screen and (max-width: 479.98px) {
+  .footer__nav {
+    flex-direction: column;
+  }
+
+  .navbar {
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .navbar__title {
+    position: relative;
+  }
+
+  .navbar__title::after {
+    content: url(../icons/less-button.svg);
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    -webkit-transform-origin-y: 65%;
+  }
+
+  .navbar__list {
+    height: 0;
+    transition: height .5s ease;
+  }
+
+  #navbar-1:checked ~ .navbar__list {
+    height: calc(4 * 28px);
+  }
+
+  #navbar-1:checked ~ label .navbar__title::after, 
+  #navbar-2:checked ~ label .navbar__title::after, 
+  #navbar-3:checked ~ label .navbar__title::after, 
+  #navbar-4:checked ~ label .navbar__title::after {
+    transform: rotate(180deg);
+  }
+
+  #navbar-2:checked ~ .navbar__list {
+    height: calc(3 * 28px);
+  }
+
+  #navbar-3:checked ~ .navbar__list {
+    height: calc(3 * 28px);
+  }
+
+  #navbar-4:checked ~ .navbar__list {
+    height: calc(2 * 28px)
+  }
+  
+}
+
+@media screen and (min-width: 480px) {
+  .footer__nav {
+    display: flex;
+
+    justify-content: space-between;
+    gap: .5rem;
+  }
+
+  .navbar__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .navbar__link:hover {
+    color: #565656;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__content {
+    flex-direction: row;
+  }
+
+  .footer__info {
+    flex: 0 1 270px;
+  }
+
+  .footer__nav {
+    flex: 1 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__logo {
+    margin-bottom: 1.625rem;
+  }
+
+  .footer__container {
+    padding-top: 3.75rem;
+  }
+
+  .footer__content {
+    gap: 12rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .footer__copyright {
+    padding: 1.5rem 0 1rem;
+  }
+}
 /* 
 
 @media screen and (max-width: 991.98px) 
