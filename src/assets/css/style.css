@@ -52,9 +52,8 @@ button[type='button'] {
   appearance: none;
 }
 
-button[type='button'] {
+button {
   background: transparent;
-  cursor: pointer;
 }
 
 html,
@@ -284,6 +283,7 @@ header {
   background: #2639ed;
   border-radius: 60px;
   padding: 12.5px 20px;
+  cursor: pointer;
 
   transition: background-color 0.2s linear;
 }
