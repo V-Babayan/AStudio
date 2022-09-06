@@ -41,22 +41,34 @@
           <div class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <button type="button" class="menu__link">Home</button>
+                <button type="button" class="menu__link" id="link_home">
+                  Home
+                </button>
               </li>
               <li class="menu__item">
-                <button type="button" class="menu__link">What We Do</button>
+                <button type="button" class="menu__link" id="link_wwd">
+                  What We Do
+                </button>
               </li>
               <li class="menu__item">
-                <button type="button" class="menu__link">Service</button>
+                <button type="button" class="menu__link" id="link_service">
+                  Service
+                </button>
               </li>
               <li class="menu__item">
-                <button type="button" class="menu__link">Project</button>
+                <button type="button" class="menu__link" id="link_project">
+                  Project
+                </button>
               </li>
               <li class="menu__item">
-                <button type="button" class="menu__link">Blog</button>
+                <button type="button" class="menu__link" id="link_blog">
+                  Blog
+                </button>
               </li>
               <li class="menu__item">
-                <button type="button" class="menu__link">Contact</button>
+                <button type="button" class="menu__link" id="link_contact">
+                  Contact
+                </button>
               </li>
             </ul>
           </div>
@@ -64,7 +76,7 @@
       </header>
 
       <main>
-        <div class="intro">
+        <div class="intro" id="route_home">
           <div class="intro__content">
             <div class="intro__container sector-decor fill-circle-decor">
               <div class="intro__inner">
@@ -74,7 +86,13 @@
                   expertise. We build readymade websites, mobile applications,
                   and elaborate online business services.
                 </p>
-                <a class="intro__button btn" href="#">Contact Now</a>
+                <button
+                  type="button"
+                  class="intro__button btn"
+                  id="link_contact_button"
+                >
+                  Contact Now
+                </button>
               </div>
             </div>
           </div>
@@ -88,7 +106,7 @@
           </div>
         </div>
 
-        <div class="our-client">
+        <div class="our-client" id="route_wwd">
           <div class="our-client__container">
             <div class="our-client__info">
               <h3 class="our-client__title title">Our Client</h3>
@@ -129,7 +147,7 @@
           </div>
         </div>
 
-        <div class="service">
+        <div class="service" id="route_service">
           <div class="service__container">
             <div class="service__content sector-decor">
               <h3 class="service__title title">
@@ -203,7 +221,7 @@
           </div>
         </div>
 
-        <div class="vision">
+        <div class="vision" id="route_project">
           <div class="vision__container">
             <div class="vision__video-block fill-circle-decor">
               <video
@@ -229,7 +247,7 @@
           </div>
         </div>
 
-        <div class="feedback">
+        <div class="feedback" id="route_blog">
           <div class="feedback__container">
             <section class="feedback__info">
               <h4 class="feedback__title title">What our happy client say</h4>
@@ -331,7 +349,7 @@
           </div>
         </div>
 
-        <div class="newsletter">
+        <div class="newsletter" id="route_contact">
           <div class="newsletter__container sector-decor">
             <div class="newsletter__info">
               <h3 class="newsletter__title title">Subscribe Newsletter</h3>
@@ -445,17 +463,17 @@
           <div class="footer__social social">
             <a class="social__link" href="#">
               <svg class="social__icon facebook-icon">
-                <use xlink:href="assets/icons/Sprite.svg#facebook"></use>
+                <use xlink:href="src/assets/icons/Sprite.svg#facebook"></use>
               </svg>
             </a>
             <a class="social__link" href="#">
               <svg class="social__icon twitter-icon">
-                <use xlink:href="assets/icons/Sprite.svg#twitter"></use>
+                <use xlink:href="src/assets/icons/Sprite.svg#twitter"></use>
               </svg>
             </a>
             <a class="social__link" href="#">
               <svg class="social__icon linkedin-icon">
-                <use xlink:href="assets/icons/Sprite.svg#linkedin"></use>
+                <use xlink:href="src/assets/icons/Sprite.svg#linkedin"></use>
               </svg>
             </a>
           </div>
