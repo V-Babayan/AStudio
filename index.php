@@ -1,5 +1,5 @@
 <?php 
-    $state = 'DEVELOPMENT';
+    $state = 'READY';
         
     function get_app_url() {
         $result = '';
