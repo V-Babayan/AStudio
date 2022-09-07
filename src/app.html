@@ -357,7 +357,7 @@
                 I will update good news and promotion service not spam
               </p>
             </div>
-            <form class="newsletter__form" action="#">
+            <form class="newsletter__form" onsubmit="return () => null">
               <input
                 class="newsletter__input"
                 type="text"
@@ -483,8 +483,60 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="src/start.js"></script>
     <script type="text/javascript" src="src/navigation.js"></script>
-    <script type="text/javascript" src="./local-server.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        const modes = {
+          PRODUCTION: 'production',
+          DEVELOPMENT: 'development',
+        };
+
+        function getCurrentMode() {
+          const hostname = window.location.hostname;
+
+          if (!hostname || hostname === 'localhost') {
+            return modes.DEVELOPMENT;
+          } else {
+            return modes.PRODUCTION;
+          }
+        }
+
+        function initLocalServer() {
+          const script = document.getElementById('local-server-script');
+
+          return new Promise((resolve, reject) => {
+            if (script) {
+              resolve();
+            } else {
+              const script = document.createElement('script');
+
+              Object.assign(script, {
+                type: 'text/javascript',
+                src: './local-server.js',
+                id: 'local-server-script',
+              });
+
+              script.addEventListener('load', () => resolve(script));
+              script.addEventListener('error', () =>
+                reject('Can not load local server script.')
+              );
+
+              document.body.appendChild(script);
+            }
+          });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+          const mode = getCurrentMode();
+
+          if (mode === modes.DEVELOPMENT) {
+            initLocalServer()
+              .catch((error) => console.log(error))
+              .then(() => console.log('Mode development.'));
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
