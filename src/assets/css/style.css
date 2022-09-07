@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Conv_AvertaDemoPECuttedDemo-Regular';
-  src: url('src/assets/fonts/AvertaDemoPECuttedDemo-Regular.eot');
-  src: url('src/assets/fonts/AvertaDemoPECuttedDemo-Regular.woff')
+  src: url('../fonts/AvertaDemoPECuttedDemo-Regular.eot');
+  src: url('../fonts/AvertaDemoPECuttedDemo-Regular.woff')
       format('woff'),
-    url('src/assets/fonts/AvertaDemoPECuttedDemo-Regular.ttf')
+    url('../fonts/AvertaDemoPECuttedDemo-Regular.ttf')
       format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -387,7 +387,7 @@ header {
 
   .intro__content {
     flex: 0 0 100%;
-    background: url(src/assets/images/Elipses-decor.png) no-repeat;
+    background: url(../images/Elipses-decor.png) no-repeat;
     background-position: calc(0.625rem + 3.75 * (100vw - 48rem) / 42) bottom;
   }
 
@@ -603,7 +603,7 @@ header {
     height: 154px;
     width: 405px;
 
-    background: url(src/assets/images/Elipses-decor.png) no-repeat;
+    background: url(../images/Elipses-decor.png) no-repeat;
 
     position: absolute;
     left: 0;
@@ -877,7 +877,7 @@ header {
     top: -42px;
     right: -37px;
 
-    background: url(src/assets/images/Elipses-decor.png);
+    background: url(../images/Elipses-decor.png);
   }
 }
 
@@ -898,7 +898,7 @@ header {
 
     flex: 0 1 29%;
     order: 2;
-    background: url(src/assets/images/Feedback/Xutur-mutur.png);
+    background: url(../images/Feedback/Xutur-mutur.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -1022,7 +1022,7 @@ header {
 
 @media screen and (min-width: 576px) {
   .newsletter__container {
-    background: #f4f9ff url(src/assets/icons/Newsletter-bg.svg) no-repeat right
+    background: #f4f9ff url(../icons/Newsletter-bg.svg) no-repeat right
       center;
     background-size: auto 100%;
   }
@@ -1058,7 +1058,7 @@ header {
     left: 88.33%;
     z-index: -1;
 
-    background: url(src/assets/images/Elipses-decor.png);
+    background: url(../images/Elipses-decor.png);
     overflow: hidden;
   }
 
@@ -1195,7 +1195,7 @@ header {
   }
 
   .navbar__title::after {
-    content: url(src/assets/icons/less-button.svg);
+    content: url(../icons/less-button.svg);
 
     position: absolute;
     right: 0;
