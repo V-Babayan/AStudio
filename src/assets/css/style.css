@@ -2,9 +2,9 @@
   font-family: 'Conv_AvertaDemoPECuttedDemo-Regular';
   src: url('../fonts/AvertaDemoPECuttedDemo-Regular.eot');
   src: url('../fonts/AvertaDemoPECuttedDemo-Regular.woff')
-      format('woff'),
-    url('../fonts/AvertaDemoPECuttedDemo-Regular.ttf')
-      format('truetype');
+    format('woff'),
+  url('../fonts/AvertaDemoPECuttedDemo-Regular.ttf')
+    format('truetype');
   font-weight: normal;
   font-style: normal;
 }
