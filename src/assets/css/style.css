@@ -2,9 +2,9 @@
   font-family: 'Conv_AvertaDemoPECuttedDemo-Regular';
   src: url('../fonts/AvertaDemoPECuttedDemo-Regular.eot');
   src: url('../fonts/AvertaDemoPECuttedDemo-Regular.woff')
-      format('woff'),
-    url('../fonts/AvertaDemoPECuttedDemo-Regular.ttf')
-      format('truetype');
+    format('woff'),
+  url('../fonts/AvertaDemoPECuttedDemo-Regular.ttf')
+    format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -1143,6 +1143,7 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: calc(.875rem + (100vw - 20rem) / 70);
 }
 
 .social__icon {
@@ -1170,6 +1171,12 @@ header {
 }
 .twitter-icon:hover {
   fill: #459cdf;
+}
+
+@media screen and (min-width: 1440px) {
+  .social {
+    margin-bottom: 1.875rem;
+  }
 }
 
 .footer__copyright {
