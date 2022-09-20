@@ -904,8 +904,7 @@ header {
 
     flex: 0 1 29%;
     order: 2;
-    background: url(../images/Feedback/Xutur-mutur.png);
-    background-repeat: no-repeat;
+    background: url(../images/Feedback/Xutur-mutur.png) no-repeat;
     background-size: 100% auto;
   }
   .feedback__bottom::before {
@@ -1028,7 +1027,7 @@ header {
 
 @media screen and (min-width: 576px) {
   .newsletter__container {
-    background: #f4f9ff url(src/assets/icons/Newsletter-bg.svg) no-repeat right center;
+    background: #f4f9ff url(../assets/icons/Newsletter-bg.svg) no-repeat right center;
     background-size: auto 100%;
   }
 }
