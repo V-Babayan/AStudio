@@ -10,5 +10,8 @@
         "url": "https://github.com/V-Babayan/AStudio/issues"
     },
     "license": "MIT",
-    "private": true
+    "private": true,
+    "devDependencies": {
+        "gh-pages": "^5.0.0"
+    }
 }
