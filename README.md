@@ -13,4 +13,4 @@
 
 ---
 
-**[AStudio](https://astudio-web.herokuapp.com/) 2022**
+**[AStudio](https://v-babayan.github.io/AStudio/) 2022**
